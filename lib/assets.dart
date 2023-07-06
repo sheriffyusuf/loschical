@@ -7,7 +7,13 @@ enum AssetType {
 }
 
 class AssetManager {
-  static String path({required String id, required AssetType assetType}) {
+  static String path({required int id, required AssetType assetType}) {
     return 'assets/${assetType.abbreviation}$id.png';
   }
+
+  static List<String> get questionPaths => List.generate(
+      5, (index) => path(id: index + 1, assetType: AssetType.question));
+
+  static List<String> get answerPaths => List.generate(
+      5, (index) => path(id: index + 1, assetType: AssetType.answer));
 }
