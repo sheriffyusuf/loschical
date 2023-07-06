@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loshical/answer_image.dart';
 import 'package:loshical/assets.dart';
-import 'package:loshical/hugged_child.dart';
 import 'package:loshical/question_image.dart';
 
 class QuestionScreen extends StatelessWidget {
