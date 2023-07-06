@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loshical/answer_image.dart';
 import 'package:loshical/assets.dart';
+import 'package:loshical/how_to_play_screen.dart';
 import 'package:loshical/question_image.dart';
 
 class QuestionScreen extends StatelessWidget {
@@ -11,6 +12,16 @@ class QuestionScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Loshical'),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (_) => const HowToPlayScreen()));
+            },
+            icon: const Icon(Icons.info_outlined),
+          )
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),

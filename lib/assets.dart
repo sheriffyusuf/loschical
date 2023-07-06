@@ -11,6 +11,8 @@ class AssetManager {
     return 'assets/${assetType.abbreviation}$id.png';
   }
 
+  static const howto = 'assets/howto.png';
+
   static List<String> get questionPaths => List.generate(
       5, (index) => path(id: index + 1, assetType: AssetType.question));
 
