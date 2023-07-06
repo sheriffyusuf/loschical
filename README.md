@@ -2,4 +2,4 @@
 
 Task instructions
 
-![Game Instruction](https://github.com/shadyaziza/loshical/blob/8b4f5ce4e4844c11bab26341b2a578bb7b747f55/assets/howto.png?raw=true)
+![Game Instruction](https://github.com/shadyaziza/loshical/blob/146c315bd13c9b5be75d2c70023af89b853b45e7/assets/howto.png?raw=true)
